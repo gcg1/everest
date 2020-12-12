@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.netflix.com/watch/*"
+        "https://www.netflix.com/watch/*"
       ],
       "css": ["styles.css"],
       "js": [
