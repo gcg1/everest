@@ -49,3 +49,10 @@ body #chat-wrapper {
 .msg-container {
   width: 460px !important;
 }
+
+.PlayerControlsNeo__bottom-controls {
+  top: 12px !important;
+  width: calc(100% - 120px) !important;
+  right: 0 !important;
+  left: initial !important;
+}
