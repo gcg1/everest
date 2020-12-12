@@ -1,0 +1,40 @@
+.with-chat {
+  width: 100% !important;
+}
+
+#chat-wrapper {
+  width: 100vw !important;
+  height: 270px !important;
+  top: initial !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+#chat-wrapper #chat-container {
+  width: 100% !important;
+  padding: 0 32px !important;
+}
+
+#chat-history-container {
+  height: 170px !important;
+}
+
+#function-title {
+  visibility: hidden !important;
+}
+
+.teleparty-blog-container {
+  display: none !important;
+}
+
+.icon-name {
+  display: none !important;
+}
+
+#chat-input-container input {
+  border: none !important;
+}
+
+#presence-indicator {
+  display: none !important;
+}

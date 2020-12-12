@@ -1,0 +1,22 @@
+{
+  "name": "Everest",
+  "version": "0.0.0.1",
+  "description": "Teleparty theme optimised for movies.",
+  "manifest_version": 2,
+  "icons": { "128": "icon128.png" },
+  "browser_action": {
+    "default_icon": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.netflix.com/watch/*"
+      ],
+      "css": ["styles.css"],
+      "js": [
+        "background.js"
+      ]
+    }
+  ]
+}
+ 
