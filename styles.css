@@ -1,10 +1,11 @@
-.with-chat {
+.nf-kb-nav-wrapper .with-chat {
   width: 100% !important;
 }
 
 body #chat-wrapper {
-  width: 100vw !important;
+  width: 380px !important;
   height: 260px !important;
+  left: 0 !important;
   top: initial !important;
   background: none !important;
   box-shadow: none !important;
@@ -19,6 +20,14 @@ body #chat-wrapper {
   height: 170px !important;
 }
 
+#chat-history::-webkit-scrollbar-thumb {
+  background-color: rgba(265, 265, 265, 0) !important;
+}
+
+#chat-wrapper:hover #chat-history::-webkit-scrollbar-thumb {
+  background-color: rgba(265, 265, 265, 0.7) !important;
+}
+
 #function-title {
   visibility: hidden !important;
 }
@@ -31,7 +40,8 @@ body #chat-wrapper {
   display: none !important;
 }
 
-#chat-input-container input {
+#chat-input-container input,
+.extension-border-top {
   border: none !important;
   border-top: none !important;
 }
@@ -42,17 +52,17 @@ body #chat-wrapper {
 
 #function-user {
   position: absolute !important;
-  bottom: 40px !important;
-  right: 40px !important;
+  opacity: 0;
+  transition: opacity 0.2s;
+  left: 32px;
 }
 
-.msg-container {
-  width: 460px !important;
+#chat-wrapper:hover #function-user {
+  opacity: 1;
 }
 
-.PlayerControlsNeo__bottom-controls {
-  top: 12px !important;
-  width: calc(100% - 120px) !important;
+.with-chat .PlayerControlsNeo__bottom-controls {
+  width: calc(100% - 380px) !important;
   right: 0 !important;
   left: initial !important;
 }
