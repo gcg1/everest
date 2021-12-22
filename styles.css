@@ -81,5 +81,5 @@ div .tp-video.with-chat {
 }
 
 .tp-video.with-chat #chat-history::-webkit-scrollbar-thumb {
-  background: #fff !important;
+  background: rgba(265, 265, 265, 0.4) !important;
 }
