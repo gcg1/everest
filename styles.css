@@ -1,5 +1,5 @@
 div .tp-video.with-chat {
-  width: 0 !important;
+  width: 100% !important;
 }
 
 .tp-video.with-chat #chat-wrapper {
@@ -51,4 +51,35 @@ div .tp-video.with-chat {
 }
 .tp-video.with-chat #chat-wrapper:hover img.chat-link {
   opacity: 1;
+}
+
+/* .tp-video.with-chat #chat-history {
+  direction: rtl;
+}
+
+.tp-video.with-chat #chat-history .msg-container {
+  direction: ltr;
+} */
+
+.tp-video.with-chat #chat-history {
+  visibility: hidden;
+  transition: visibility 0.2s;
+}
+
+.tp-video.with-chat #chat-history .msg-container,
+.tp-video.with-chat #chat-history:hover,
+.tp-video.with-chat #chat-history:focus {
+  visibility: visible;
+}
+
+.scrollbox_delayed {
+  transition: visibility 0.2s;
+}
+
+.scrollbox_delayed:hover {
+  transition: visibility 0s 0.2s;
+}
+
+.tp-video.with-chat #chat-history::-webkit-scrollbar-thumb {
+  background: #fff !important;
 }
