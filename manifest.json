@@ -1,6 +1,6 @@
 {
   "name": "Everest - Minimal Theme for Teleparty",
-  "version": "0.0.0.1",
+  "version": "2.0.0.1",
   "description": "A minimal theme for the Teleparty (formerly Netflix Party) Chrome Extension.",
   "manifest_version": 2,
   "icons": { "128": "icon128.png" },
@@ -9,14 +9,9 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://www.netflix.com/*"
-      ],
+      "matches": ["https://www.netflix.com/*"],
       "css": ["styles.css"],
-      "js": [
-        "background.js"
-      ]
+      "js": ["background.js"]
     }
   ]
 }
- 
