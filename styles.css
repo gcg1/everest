@@ -53,14 +53,6 @@ div .tp-video.with-chat {
   opacity: 1;
 }
 
-/* .tp-video.with-chat #chat-history {
-  direction: rtl;
-}
-
-.tp-video.with-chat #chat-history .msg-container {
-  direction: ltr;
-} */
-
 .tp-video.with-chat #chat-history {
   visibility: hidden;
   transition: visibility 0.2s;
@@ -70,6 +62,10 @@ div .tp-video.with-chat {
 .tp-video.with-chat #chat-history:hover,
 .tp-video.with-chat #chat-history:focus {
   visibility: visible;
+}
+
+.tp-video.with-chat #chat-history .msg-container {
+  padding: 3px 0 !important;
 }
 
 .scrollbox_delayed {
